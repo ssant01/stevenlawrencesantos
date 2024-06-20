@@ -1,6 +1,9 @@
 html,
 body {
-  min-height: 100%;
+  min-height: 100%
+  position: relative;
+  background-color: #cccccc;
+
 }
 
 p,
@@ -16,28 +19,62 @@ a {
 body {
   position: relative;
 }
+
+border {
+    background-color: #cccccc;
+}
 * {
   outline: none;
   background-color: #cccccc;
 }
 
 .main {
-  min-height: 40vh;
+  min-height: 50vh;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 344px) {
+    .main {
+      min-height: 55vh;
+    }
+  }
+
+
+@media screen and (min-width: 390px) {
+    .main {
+      min-height: 63vh;
+    }
+  }
+
+
+@media screen and (min-width: 414px) {
+    .main {
+      min-height: 60vh;
+    }
+  }
+
+@media screen and (min-width: 430px) {
   .main {
-    min-height: 60vh;
+    min-height: 63vh;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main {
+    min-height: 73vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+      min-height: 80vh;
+    }
+}
 .lad-heading {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-  align-items: left;
+  margin-top: 20px;
+  align-items: flex-start;
   padding: 0 30px;
   text-transform: uppercase;
 }
@@ -45,17 +82,17 @@ body {
 @media screen and (min-width: 480px) {
   .lad-heading {
     align-items: center;
+    margin-top: 50px;
   }
 }
 
 .lad-contact {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
+  align-items: flex-start;
+  margin: 3rem 0;
   text-transform: uppercase;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .lad-education {
@@ -66,12 +103,22 @@ body {
 
 @media screen and (min-width: 480px) {
   .lad-contact {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 
 .lad-email {
   font-weight: 400 !important;
+}
+
+.lad-footer {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .lad-footer {
+    margin: -100px 50px 0px 50px;
+  }
 }
 
 h1,
@@ -116,17 +163,8 @@ h6 {
   margin: 0 10px 0 10px;
 }
 
-.footer-p2 {
-  padding: 0px 15px;
-  width: 100%;
-}
 
-.footer {
-  padding-top: 35px;
-  padding-bottom: 45px;
-}
-
-.footer-p2 a {
+a {
   color: black;
   font-size: 14px;
 }
@@ -134,11 +172,6 @@ h6 {
 @media only screen and (max-width: 480px) {
   .font-1 {
     font-size: 18px;
-  }
-
-  .footer {
-    padding-top: 15px;
-    padding-bottom: 25px;
   }
 
   input,
