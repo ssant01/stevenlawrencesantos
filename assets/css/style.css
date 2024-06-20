@@ -112,12 +112,12 @@ border {
 }
 
 .lad-footer {
-  padding: 0 10px;
+  margin: 0px 10px 0px 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 455px) {
   .lad-footer {
-    margin: -100px 50px 0px 50px;
+    margin: -100px 100px 0px 100px !important;
   }
 }
 
