@@ -29,7 +29,7 @@ border {
 }
 
 .main {
-  min-height: 50vh;
+  min-height: 65vh;
 }
 
 @media screen and (min-width: 344px) {
@@ -77,12 +77,13 @@ border {
   align-items: flex-start;
   padding: 0 30px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
   .lad-heading {
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 
@@ -113,6 +114,8 @@ border {
 
 .lad-footer {
   margin: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 455px) {
